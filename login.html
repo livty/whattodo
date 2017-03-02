@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="login.css">
+
+    <script
+  			  src="https://code.jquery.com/jquery-3.1.1.js"
+  			  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  			  crossorigin="anonymous"></script>
+
+  <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/coffee-script/1.1.2/coffee-script.min.js"></script>
+    </script>
+
+    <title>Login page</title>
+  </head>
+  <body>
+
+
+
+
+
+
+<input id="city" class="city" type="text" placeholder="what's up for Sat?"><br>
+<p  id="list"class="list"></p>
+<input id="city1" class="city"type="text" placeholder="what's up for Sun?"><br>
+<p  id="list1"class="list"></p>
+<input id="city2" class="city" type="text" placeholder="what's up for Mon?"><br>
+<p  id="list2"class="list"></p>
+<input id="city3" class="city" type="text" placeholder="what's up for Tue?"><br>
+<p  id="list3"class="list"></p>
+<input id="city4" class="city"type="text" placeholder="what's up for Wed?"><br>
+<p  id="list4"class="list"></p>
+<input id="city5" class="city" type="text" placeholder="what's up for Thu?"><br>
+<p  id="list5"class="list"></p>
+<input id="city6" class="city" type="text" placeholder="what's up for Fri?"><br>
+<p  id="list6"class="list"></p>
+
+
+</form>
+</body>
+  <script>
+    var itemsExist = true;
+    var indexNum = 0;
+    var unorderedList = document.getElementById('list');
+    var unorderedList1 = document.getElementById('list1');
+    var unorderedList2 = document.getElementById('list2');
+    var unorderedList3 = document.getElementById('list3');
+    var unorderedList4 = document.getElementById('list4');
+    var unorderedList5 = document.getElementById('list5');
+    var unorderedList6 = document.getElementById('list6');
+    var or = ("or you could get a flight to Lisbon");
+    var plan=   new Array ("");
+    var plan1 = new Array ("");
+    var plan2 = new Array ("");
+    var plan3 = new Array ("");
+    var plan4 = new Array ("");
+    var plan5 = new Array ("");
+    var plan6 = new Array ("");
+    var myElement;
+
+
+
+
+
+  document.getElementById("city").addEventListener("keypress",function(event){
+
+   if(event.keyCode == 13) {
+      plan.push(document.getElementById("city").value);
+      unorderedList.innerHTML=plan.join("   ");
+      document.getElementById("list").innerHTML= plan.join("   ") + " OR" +" taking a trip up Kilimanjaro";
+
+
+    }});
+  document.getElementById("city").addEventListener("keypress",function(event){
+         if(event.keyCode == 13) {
+        document.getElementById("city").value="";
+}});
+document.getElementById("city1").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+
+    plan1.push(document.getElementById("city1").value);
+    unorderedList1.innerHTML=plan1.join("   " );
+    document.getElementById("list1").innerHTML= plan1.join("   ") + " OR" +" take the first flight to Lisbon";
+
+
+
+
+
+
+  }});
+document.getElementById("city1").addEventListener("keypress",function(event){
+       if(event.keyCode == 13) {
+      document.getElementById("city1").value="";
+}});
+document.getElementById("city2").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+    plan2.push(document.getElementById("city2").value);
+    unorderedList2.innerHTML=plan2.join("   ");
+    document.getElementById("list2").innerHTML= plan2.join("   ") + "  OR " +  " signing up for a salsa class in Santiago de Cali, Colombia ";
+
+
+
+  }});
+document.getElementById("city2").addEventListener("keypress",function(event){
+       if(event.keyCode == 13) {
+      document.getElementById("city2").value="";
+}});
+document.getElementById("city3").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+    plan3.push(document.getElementById("city3").value);
+    unorderedList3.innerHTML=plan3.join("   ");
+    document.getElementById("list3").innerHTML= plan3.join("   ") + "  OR " +  " have a good cup of coffee in \"Truth Coffee\" in Cape Town, South Africa ";
+
+
+
+  }});
+document.getElementById("city3").addEventListener("keypress",function(event){
+       if(event.keyCode == 13) {
+      document.getElementById("city3").value="";
+}});
+document.getElementById("city4").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+    plan4.push(document.getElementById("city4").value);
+    unorderedList4.innerHTML=plan4.join("   ");
+    document.getElementById("list4").innerHTML= plan4.join("   ") + "  OR " +  " buy tickets for Goodwood Festival of Speed in West Sussex, England ";
+
+
+  }});
+document.getElementById("city4").addEventListener("keypress",function(event){
+       if(event.keyCode == 13) {
+      document.getElementById("city4").value="";
+}});
+document.getElementById("city5").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+    plan5.push(document.getElementById("city5").value);
+    unorderedList5.innerHTML=plan5.join("   ");
+document.getElementById("list5").innerHTML= plan5.join("   ") + "  OR " +  " go to Monteverde Extremo Park and try out Tarzan style swing in Costa Rica  ";
+
+
+  }});
+document.getElementById("city5").addEventListener("keypress",function(event){
+       if(event.keyCode == 13) {
+      document.getElementById("city5").value="";
+}});
+document.getElementById("city6").addEventListener("keypress",function(event){
+
+ if(event.keyCode == 13) {
+    plan6.push(document.getElementById("city6").value);
+    unorderedList6.innerHTML=plan6.join("   ");
+    document.getElementById("list6").innerHTML= plan6.join("   ") + "  OR " +  " go for a lovely run at Cliffs of Moher in Western Ireland  ";
+
+
+
+  }});
+
+</script>
+
+</html>
